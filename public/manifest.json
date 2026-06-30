@@ -1,0 +1,19 @@
+{
+  "name": "The Goodest Good News",
+  "short_name": "GGN",
+  "description": "A children's story about the Goodest Good News",
+  "start_url": "/goodestgoodnews/",
+  "scope": "/goodestgoodnews/",
+  "display": "standalone",
+  "background_color": "#0D1B2A",
+  "theme_color": "#0D1B2A",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/assets/images/icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

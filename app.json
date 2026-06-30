@@ -1,0 +1,70 @@
+{
+  "expo": {
+    "name": "The Goodest Good News",
+    "slug": "the-goodest-good-news",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/images/icon.png",
+    "scheme": "ggn",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+
+    "splash": {
+      "backgroundColor": "#0D1B2A",
+      "resizeMode": "contain"
+    },
+
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.erikmeyers.goodestgoodnews",
+      "buildNumber": "1",
+      "usesNonExemptEncryption": false,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app plays narrated audio but does not record or use the microphone.",
+        "NSCameraUsageDescription": "This app does not use the camera.",
+        "UIRequiresFullScreen": true
+      }
+    },
+
+    "android": {
+      "package": "com.erikmeyers.goodestgoodnews",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#0D1B2A"
+      },
+      "permissions": []
+    },
+
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "shortName": "GGN",
+      "description": "A children's story about the Goodest Good News",
+      "themeColor": "#0D1B2A",
+      "backgroundColor": "#0D1B2A"
+    },
+
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-av",
+        {
+          "microphonePermission": false
+        }
+      ]
+    ],
+
+    "experiments": {
+      "typedRoutes": true,
+      "baseUrl": "/goodestgoodnews"
+    },
+
+    "assetBundlePatterns": [
+      "assets/images/*",
+      "assets/sounds/*"
+    ]
+  }
+}
