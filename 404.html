@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>The Goodest Good News</title>
+    <script>
+      // GitHub Pages SPA redirect.
+      // Encodes the current path/query/hash and redirects to index.html,
+      // which reads it back and restores the URL via history.replaceState.
+      var base = '/goodestgoodnews';
+      var path = window.location.pathname.replace(base, '') || '/';
+      var search = window.location.search;
+      var hash = window.location.hash;
+      var encoded = encodeURIComponent(path + search + hash);
+      window.location.replace(base + '/?p=' + encoded);
+    </script>
+  </head>
+  <body></body>
+</html>
